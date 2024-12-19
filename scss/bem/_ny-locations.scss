@@ -1,0 +1,24 @@
+.ny-locations {
+    &.section {
+        margin-bottom: 10rem;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15rem;
+    }
+
+    &__item {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        gap: 7.2rem;
+    }
+
+    &__item-right {
+        width: 69rem;
+        flex-shrink: 0;
+    }
+}

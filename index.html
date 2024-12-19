@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta
+        charset="utf-8">
+        <!-- <base href="/"> -->
+        <title>Simple Starter 3.0</title>
+        <meta name="description" content="Simple Starter 2.0 Description ">
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta property="og:image" content="images/preview.jpg">
+        <link rel="icon" href="images/favicon.png">
+        <link rel="preload stylesheet" as="style" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <link
+            rel="preload stylesheet"
+            as="style"
+            href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body class="preload">
+        <div class="wrapper">
+            <header class="page-header">
+                <div class="page-header__site-container">
+                    <div class="page-header__row">
+                        <a href="./index.html" class="page-header__logo">
+                            <img src="./images/logo-big.png" alt="">
+                        </a>
+                        <div class="page-header__controls">
+                            <form action="" class="page-header__search-bar search-bar">
+                                <i></i>
+                                <input type="search" class="search-bar__input" placeholder="Выбрать город подарка" required>
+                            </form>
+                            <a href="#" class="page-header__btn">
+                                Написать пожелание Деду Морозу
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="page-main">
+                <section class="section ny-welcome">
+                    <div class="ny-welcome__site-container">
+                        <div class="ny-welcome__body">
+                            <div class="ny-welcome__logo ny-welcome__logo--with-image">
+                                <picture>
+                                    <source type="image/webp" srcset="./images/logo-big.webp">
+                                    <source srcset="./images/logo-big.png">
+                                    <img src="./images/logo-big.png" alt="">
+                                </picture>
+                            </div>
+                            <div class="ny-welcome__article">
+                                <h1 class="ny-welcome__title">
+                                    Добро пожаловать<br> в новогодний маркетплейс<br> от Медиагруппы «РИМ»
+                                </h1>
+                                <div class="ny-welcome__text">
+                                    Здесь собраны лучшие подарки<br> со всей страны. Выбор за тобой!
+                                </div>
+                            </div>
+                            <img class="ny-welcome__sock" src="./images/sock.png" alt="">
+                            <img class="ny-welcome__orb" src="./images/orb.png" alt="">
+                            <img class="ny-welcome__candy" src="./images/candy.png" alt="">
+                        </div>
+                    </div>
+                </section>
+                <section class="section ny-bilboard">
+                    <div class="ny-bilboard__site-container">
+                        <div class="ny-bilboard__body">
+                            <h2 class="ny-bilboard__title">
+                                один оператор — охват всей россии
+                            </h2>
+                            <div class="ny-bilboard__bilboard-wrapper">
+                                <img class="ny-bilboard__orb" src="./images/rim-orb.png" alt="">
+                                <img class="ny-bilboard__gift" src="./images/gift.png" alt="">
+                                <div class="ny-bilboard__bilboard-image">
+                                    <picture>
+                                        <source type="image/webp" srcset="./images/bilboard.webp">
+                                        <source srcset="./images/bilboard.png">
+                                        <img src="./images/logo-big.png" alt="">
+                                    </picture>
+                                </div>
+                                <p class="ny-bilboard__bilboard-text">
+                                    Наша география охватывает<br>
+                                    150 городов России, каждый из которых<br> уникален и неповторим. Поэтому мы<br> решили подарить тебе возможность<br> выбрать любой подарок из ключевых<br>
+                                    регионов нашего присутствия.<br> Да, волшебство случается!
+                                </p>
+                                <p class="ny-bilboard__bilboard-slogan">
+                                    Знакомься с городами и выбирай понравившийся подарок!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section ny-locations">
+                    <div class="ny-locations__site-container">
+                        <ul class="ny-locations__list">
+                            <li class="ny-locations__item">
+                                <article class="ny-locations__item-left ny-info">
+                                    <h3 class="ny-info__title">
+                                        Татарстан
+                                    </h3>
+                                    <div class="ny-info__desc">
+                                        <p class="ny-info__text">
+                                            Казань знаменита не только эчпочмаками, книгами про уличные банды и аутентичными аксессуарами, но еще и тем, что здесь
+                                            началась наша история.
+                                        </p>
+                                        <p class="ny-info__text">
+                                            В столице Татарстана мы являемся абсолютным лидером отрасли и имеем доминирующую долю присутствия. Занимаем 95,97%
+                                            рынка, размещая рекламу на 4 294 поверхностях, из которых 2 520 — диджитальные.
+                                        </p>
+                                    </div>
+                                    <ul class="ny-info__list">
+                                        <li class="ny-info__item">
+                                            <span class="ny-info__value">95,97%</span>
+                                            <span class="ny-info__key">доля&nbsp;рынка</span>
+                                        </li>
+                                        <li class="ny-info__item">
+                                            <span class="ny-info__value">4 294</span>
+                                            <span class="ny-info__key">рекламные поверхности</span>
+                                        </li>
+                                        <li class="ny-info__item">
+                                            <span class="ny-info__value">2 520</span>
+                                            <span class="ny-info__key">Digital&nbsp;рекламные поверхности</span>
+                                        </li>
+                                    </ul>
+                                </article>
+                                <div class="ny-locations__item-right ny-carousel">
+                                    <div class="ny-carousel__swiper swiper js-ny-carousel-swiper">
+                                        <ul class="ny-carousel__swiper-wrapper swiper-wrapper">
+                                            <li class="ny-carousel__swiper-slide swiper-slide">
+                                                <div class="ny-carousel__ny-slide ny-slide">
+                                                    <div class="ny-slide__image">
+                                                        <img src="./images/slide-image.png" alt="">
+                                                    </div>
+                                                    <div class="ny-slide__info">
+                                                        <h4 class="ny-slide__title">
+                                                            Книга «Слово пацана»
+                                                        </h4>
+                                                        <p class="ny-slide__desc">
+                                                            Книга о пацанах, участниках бесчисленных молодежных группировок, наводнивших поздний Советский Союз, тех, кто бил и
+                                                            попадал под раздачу — профессионально, ежедневно, беспощадно.
+                                                        </p>
+                                                        <a href="#" class="ny-slide__button">
+                                                            <i></i>
+                                                            Заказать
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="ny-carousel__swiper-slide swiper-slide">
+                                                <div class="ny-carousel__ny-slide ny-slide">
+                                                    <div class="ny-slide__image">
+                                                        <img src="./images/slide-image.png" alt="">
+                                                    </div>
+                                                    <div class="ny-slide__info">
+                                                        <h4 class="ny-slide__title">
+                                                            Мистическая Москва
+                                                        </h4>
+                                                        <p class="ny-slide__desc">
+                                                            Все секреты Москвы — в этой книге, а главный секрет охватной рекламы в Москве — это реклама на такси «РИМ DRIVE».
+                                                        </p>
+                                                        <a href="#" class="ny-slide__button">
+                                                            <i></i>
+                                                            Заказать
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="ny-carousel__swiper-controls">
+                                            <button type="button" class="ny-carousel__swiper-btn ny-carousel__swiper-btn--prev">
+                                                <span class="visually-hidden">Назад</span>
+                                                <svg class="icon">
+                                                    <use xlink:href="./images/sprite.svg#carousel-btn"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="ny-carousel__swiper-btn ny-carousel__swiper-btn--next">
+                                                <span class="visually-hidden">Вперед</span>
+                                                <svg class="icon">
+                                                    <use xlink:href="./images/sprite.svg#carousel-btn"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="section ny-stats">
+                    <div class="ny-stats__image">
+                        <picture>
+                            <source type="image/webp" srcset="./images/stats.webp">
+                            <img src="./images/stats.png" alt="">
+                        </picture>
+                    </div>
+                    <div class="ny-stats__site-container">
+                        <ul class="ny-stats__list">
+                            <li class="ny-stats__item">
+                                <p class="ny-stats__number">
+                                    86 241
+                                </p>
+                                <p class="ny-stats__text">
+                                    рекламных поверхностей
+                                </p>
+                            </li>
+                            <li class="ny-stats__item">
+                                <p class="ny-stats__number">
+                                    42
+                                </p>
+                                <p class="ny-stats__text">
+                                    региона
+                                </p>
+                            </li>
+                            <li class="ny-stats__item">
+                                <p class="ny-stats__number">
+                                    150
+                                </p>
+                                <p class="ny-stats__text">
+                                    городов
+                                </p>
+                            </li>
+                            <li class="ny-stats__item">
+                                <p class="ny-stats__number">
+                                    115+
+                                </p>
+                                <p class="ny-stats__text">
+                                    партнеров
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+            <footer class="page-footer _bg-text _color-white"></footer>
+        </div>
+        <div class="modal">
+            <div class="modal__container" data-target="modal">
+                <div class="modal__content">
+                    <button type="button" class="modal__close-btn modal-close">
+                        <svg class="icon">
+                            <use xlink:href="./images/sprite.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <script
+            async
+            src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+            integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+            crossorigin="anonymous"
+            defer></script>
+        <script
+            async
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.8/inputmask.min.js"
+            integrity="sha512-7MSrprC5qi3xYbOIZqbB59XEYQMILpy0tQhiHDOjX8v0+7zUJ54o5Xw2UB0GXvim3LKMPbHld9BPzV9euBjfug=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+            defer></script>
+        <script async src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+        <script async src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js" defer></script>
+        <script src="./js/main.js" type="module" defer></script>
+    </body>
+</html>

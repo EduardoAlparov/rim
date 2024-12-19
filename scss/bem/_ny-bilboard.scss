@@ -1,0 +1,106 @@
+.ny-bilboard {
+
+    &.section {
+        margin-bottom: 4.4rem;
+    }
+
+    &__site-container {
+        position: relative;
+        padding-block: 0 14rem;
+        margin-bottom: -10rem;
+
+        &::after {
+            position: absolute;
+            inset: 0;
+            z-index: 200;
+
+            background-image: url('../../images/threes.png');
+            background-position-x: 0;
+            background-position-y: 100%;
+            background-repeat: no-repeat;
+            background-size: contain;
+            pointer-events: none;
+            content: "";
+        }
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    &__title {
+        color: #5229A1;
+        text-align: center;
+        text-transform: uppercase;
+
+        @include font(6rem, 1.10, 800);
+    }
+
+    &__bilboard-wrapper {
+        position: relative;
+
+
+
+        width: 100%;
+        aspect-ratio: 1.35 / 1;
+    }
+
+    &__bilboard-image {
+        position: absolute;
+        inset: 0;
+
+        img {
+            display: block;
+            width: 100%;
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+
+    &__bilboard-text {
+        position: absolute;
+        left: 50%;
+
+        max-width: 35ch;
+        transform: translate(-56%, 40%);
+
+        color: #FFF;
+        text-align: center;
+
+        @include font(3rem, 1.2, 800);
+    }
+
+    &__bilboard-slogan {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        @include font(4.33rem, 1.1, 800);
+
+        width: 33ch;
+
+        color: #5229A1;
+        text-transform: uppercase;
+    }
+
+    &__orb {
+        position: absolute;
+        top: 35%;
+        left: 14%;
+        z-index: 200;
+
+        width: 17rem;
+        height: 17rem;
+    }
+
+    &__gift {
+        position: absolute;
+        top: 1%;
+        right: 1%;
+        z-index: 200;
+
+        width: 19rem;
+        height: 19rem;
+    }
+}

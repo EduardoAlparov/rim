@@ -1,0 +1,85 @@
+.ny-slide {
+    display: flex;
+    align-items: stretch;
+    gap: 2rem;
+
+    &__image {
+        position: relative;
+
+        width: 29.8rem;
+        aspect-ratio: 1;
+        flex-shrink: 0;
+
+        &::before {
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+
+            background: #F1F1F1;
+            border-radius: 1.45rem;
+
+            content: "";
+        }
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 100;
+
+            display: block;
+            height: 100%;
+            transform: translate(-50%, -50%);
+
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1.6rem;
+    }
+
+    &__title {
+        white-space: nowrap;
+        @include font(2.4rem, 1.0, 800);
+    }
+
+    &__desc {
+        flex-grow: 1;
+        @include font(1.4rem, 1.0, 500);
+    }
+
+    &__button {
+        display: grid;
+        grid-auto-flow: column;
+        place-content: center;
+        place-items: center;
+        gap: 0.48rem;
+
+        width: max-content;
+        padding: 1.35rem 3.4rem;
+
+        background: #FF5129;
+        border-radius: 1.45rem;
+        box-shadow: 0px 0px 19.74px 0px rgba(255, 81, 41, 0.25), 0px 0px 3.266px 0px rgba(255, 81, 41, 0.50);
+
+        color: #FFF;
+        text-align: center;
+        @include font(2.2rem, 1.2, 800);
+
+        i {
+            display: block;
+            width: 1.8rem;
+            height: 1.8rem;
+
+            background-image: url('data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2216%22%20viewBox%3D%220%200%2018%2016%22%20fill%3D%22none%22%3E%0A%20%20%3Cpath%20d%3D%22M17.5807%205.31518C17.2751%204.92952%2016.7934%204.70407%2016.2827%204.70737H15.096L12.4991%200.620349C12.2907%200.323886%2011.872%200.235515%2011.5497%200.420499C11.2283%200.605485%2011.1197%200.996936%2011.3027%201.30744L13.4704%204.70737H4.72604L6.89375%201.30744C6.99885%201.15714%207.03476%200.973807%206.9936%200.798737C6.95156%200.623662%206.83682%200.471703%206.67391%200.378386C6.511%200.285066%206.31568%200.257815%206.13089%200.303235C5.94696%200.348655%205.79019%200.463445%205.69734%200.620354L3.10049%204.70738H1.91372C1.40399%204.70655%200.923141%204.93035%200.613971%205.31271C0.303927%205.69425%200.201461%206.19056%200.335452%206.65387L2.63365%2014.5818C2.82371%2015.2524%203.46746%2015.7182%204.20315%2015.7182H13.9933C14.729%2015.7182%2015.3727%2015.2524%2015.5628%2014.5818L17.861%206.65387C17.9967%206.19141%2017.8934%205.69505%2017.5807%205.31518ZM7.93077%2011.5345C7.93077%2011.8987%207.61635%2012.1952%207.23009%2012.1952C6.84297%2012.1952%206.52942%2011.8987%206.52942%2011.5345V8.89186C6.52942%208.52683%206.84297%208.23119%207.23009%208.23119C7.61635%208.23119%207.93077%208.52683%207.93077%208.89186V11.5345ZM11.668%2011.5345H11.6671C11.6671%2011.8987%2011.3536%2012.1952%2010.9664%2012.1952C10.5802%2012.1952%2010.2658%2011.8987%2010.2658%2011.5345V8.89186C10.2658%208.52683%2010.5802%208.23119%2010.9664%208.23119C11.3536%208.23119%2011.6671%208.52683%2011.6671%208.89186L11.668%2011.5345Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}

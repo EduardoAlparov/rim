@@ -1,0 +1,126 @@
+.ny-welcome {
+
+    &.section {
+        margin-bottom: 7.7rem;
+    }
+
+    &__site-container {
+        @extend ._intro-padding-top;
+    }
+
+    &__body {
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 8rem;
+
+        padding-block: 9.6rem;
+
+        background: linear-gradient(158deg, #5229A1 -0.74%, #FF5129 101.44%);
+        border-radius: 3rem;
+    }
+
+    &__body::after {
+        position: absolute;
+        inset: 0;
+        z-index: 200;
+
+        background-image: url('../../images/intro-back.png');
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: "";
+        pointer-events: none;
+    }
+
+    &__logo {
+        width: 90.3rem;
+        aspect-ratio: 5.19 / 1;
+
+        img {
+            display: block;
+            width: 100%;
+
+            object-fit: contain;
+            object-position: center;
+        }
+
+        &--with-image {
+            position: relative;
+
+            &::after {
+                position: absolute;
+                top: 100%;
+                right: 0;
+                z-index: 100;
+
+                width: 20rem;
+                height: 21.5rem;
+                transform: translate(10%, -44%);
+
+                background-image: url('../../images/red-orb.png');
+                background-position: top left;
+                background-repeat: no-repeat;
+                background-size: contain;
+                content: ""
+            }
+        }
+    }
+
+    &__article {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 3rem;
+
+        color: #FFF;
+
+        &>* {
+            text-align: center;
+        }
+    }
+
+    &__title {
+        @include font(7.15rem, 1.10, 800);
+        text-transform: uppercase;
+    }
+
+    &__text {
+        @include font(4rem, 1.10, 700);
+    }
+
+    &__sock {
+        position: absolute;
+        left: 0;
+        top: 9rem;
+        z-index: 200;
+
+        width: 13.5rem;
+        height: 11.5rem;
+        transform: translateX(-50%);
+    }
+
+    &__orb {
+        position: absolute;
+        left: 0;
+        bottom: 3.5rem;
+        z-index: 200;
+
+        width: 17.6rem;
+        height: 22.6rem;
+        transform: translateX(-25%);
+    }
+
+    &__candy {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 200;
+
+        width: 20rem;
+        height: 19rem;
+        transform: translateX(-20%);
+    }
+}
