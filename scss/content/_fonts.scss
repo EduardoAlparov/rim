@@ -3,7 +3,7 @@
     font-style: normal;
     font-weight: 500;
     src: local("Uni Neue"),
-        url("./fonts/UniNeueRegular.woff2") format("woff2");
+        url("./../fonts/UniNeueRegular.woff2") format("woff2");
 }
 
 @font-face {
@@ -11,7 +11,7 @@
     font-style: normal;
     font-weight: 700;
     src: local("Uni Neue"),
-        url("./fonts/UniNeueBold.woff2") format("woff2");
+        url("./../fonts/UniNeueBold.woff2") format("woff2");
 }
 
 @font-face {
@@ -19,5 +19,5 @@
     font-style: normal;
     font-weight: 800;
     src: local("Uni Neue"),
-        url("./fonts/UniNeueHeavy.woff2") format("woff2");
+        url("./../fonts/UniNeueHeavy.woff2") format("woff2");
 }

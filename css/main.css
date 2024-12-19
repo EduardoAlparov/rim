@@ -163,19 +163,19 @@ input, textarea {
   font-family: "Uni Neue";
   font-style: normal;
   font-weight: 500;
-  src: local("Uni Neue"), url("../../fonts/UniNeueRegular.woff2") format("woff2");
+  src: local("Uni Neue"), url("./../fonts/UniNeueRegular.woff2") format("woff2");
 }
 @font-face {
   font-family: "Uni Neue";
   font-style: normal;
   font-weight: 700;
-  src: local("Uni Neue"), url("../../fonts/UniNeueBold.woff2") format("woff2");
+  src: local("Uni Neue"), url("./../fonts/UniNeueBold.woff2") format("woff2");
 }
 @font-face {
   font-family: "Uni Neue";
   font-style: normal;
   font-weight: 800;
-  src: local("Uni Neue"), url("../../fonts/UniNeueHeavy.woff2") format("woff2");
+  src: local("Uni Neue"), url("./../fonts/UniNeueHeavy.woff2") format("woff2");
 }
 html {
   font-size: 8px;
@@ -675,7 +675,7 @@ textarea:required:valid {
   position: absolute;
   inset: 0;
   z-index: 200;
-  background-image: url("../../images/intro-back.png");
+  background-image: url("./../images/intro-back.png");
   background-position: top left;
   background-repeat: no-repeat;
   background-size: contain;
@@ -706,7 +706,7 @@ textarea:required:valid {
   height: 21.5rem;
   -webkit-transform: translate(10%, -44%);
           transform: translate(10%, -44%);
-  background-image: url("../../images/red-orb.png");
+  background-image: url("./../images/red-orb.png");
   background-position: top left;
   background-repeat: no-repeat;
   background-size: contain;
@@ -795,7 +795,7 @@ textarea:required:valid {
   position: absolute;
   inset: 0;
   z-index: 200;
-  background-image: url("../../images/threes.png");
+  background-image: url("./../images/threes.png");
   background-position-x: 0;
   background-position-y: 100%;
   background-repeat: no-repeat;
