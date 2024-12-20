@@ -7,18 +7,13 @@
         display: flex;
         flex-direction: column;
         align-items: stretch;
-        gap: 15rem;
+        gap: 10rem;
     }
 
     &__item {
         display: flex;
+        flex-direction: column;
         align-items: stretch;
-        justify-content: space-between;
-        gap: 7.2rem;
-    }
-
-    &__item-right {
-        width: 69rem;
-        flex-shrink: 0;
+        gap: 6rem;
     }
 }

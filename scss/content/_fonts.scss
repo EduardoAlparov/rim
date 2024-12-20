@@ -1,6 +1,14 @@
 @font-face {
     font-family: "Uni Neue";
     font-style: normal;
+    font-weight: 300;
+    src: local("Uni Neue"),
+        url("./../fonts/UniNeue-Light.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Uni Neue";
+    font-style: normal;
     font-weight: 500;
     src: local("Uni Neue"),
         url("./../fonts/UniNeueRegular.woff2") format("woff2");

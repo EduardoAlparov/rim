@@ -1,16 +1,32 @@
 .ny-info {
+
+
+    &__head {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 2rem;
+
+        max-width: 82rem;
+        margin-bottom: 3.2rem;
+    }
+
     &__title {
         @include font(4rem, 1.0, 800);
-        margin-bottom: 2rem;
+
+        color: #5229A1;
+    }
+
+    &__cities {
+        @include font(1.6rem, 1.0, 300);
+        font-style: italic;
     }
 
     &__desc {
         display: flex;
-        flex-direction: column;
         align-items: stretch;
-        gap: 1rem;
+        gap: 3rem;
 
-        margin-bottom: 3.2rem;
 
         &>p {
             color: #1E1E1E;
@@ -20,26 +36,27 @@
 
     &__list {
         display: flex;
-        justify-content: space-between;
-        gap: 3rem;
+        align-items: center;
+        gap: 5rem;
     }
 
     &__item {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
-        max-width: min-content;
     }
 
     &__value {
         color: #FF5129;
         letter-spacing: -0.01em;
         text-transform: uppercase;
-        @include font(3.6rem, 1.1, 800);
+        @include font(5.2rem, 1.1, 800);
     }
 
     &__key {
-        @include font(1.4rem, 1.1, 800);
+        @include font(2rem, 1.1, 800);
+
+        color: #060606;
         text-transform: uppercase;
         font-style: italic;
     }

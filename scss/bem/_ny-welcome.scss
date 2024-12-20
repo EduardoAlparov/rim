@@ -1,7 +1,7 @@
 .ny-welcome {
 
     &.section {
-        margin-bottom: 7.7rem;
+        margin-bottom: 4.5rem;
     }
 
     &__site-container {
@@ -16,10 +16,10 @@
         flex-direction: column;
         gap: 8rem;
 
-        padding-block: 9.6rem;
+        padding-block: 5.7rem;
 
         background: linear-gradient(158deg, #5229A1 -0.74%, #FF5129 101.44%);
-        border-radius: 3rem;
+        border-radius: 1.5rem;
     }
 
     &__body::after {
@@ -33,40 +33,6 @@
         background-size: contain;
         content: "";
         pointer-events: none;
-    }
-
-    &__logo {
-        width: 90.3rem;
-        aspect-ratio: 5.19 / 1;
-
-        img {
-            display: block;
-            width: 100%;
-
-            object-fit: contain;
-            object-position: center;
-        }
-
-        &--with-image {
-            position: relative;
-
-            &::after {
-                position: absolute;
-                top: 100%;
-                right: 0;
-                z-index: 100;
-
-                width: 20rem;
-                height: 21.5rem;
-                transform: translate(10%, -44%);
-
-                background-image: url('./../images/red-orb.png');
-                background-position: top left;
-                background-repeat: no-repeat;
-                background-size: contain;
-                content: ""
-            }
-        }
     }
 
     &__article {
@@ -83,44 +49,30 @@
     }
 
     &__title {
-        @include font(7.15rem, 1.10, 800);
-        text-transform: uppercase;
+        @include font(5.6rem, 1.10, 800);
     }
 
     &__text {
-        @include font(4rem, 1.10, 700);
+        @include font(3.2rem, 1.10, 500);
+        max-width: 40ch;
+        font-style: italic;
     }
 
-    &__sock {
+    &__gift {
         position: absolute;
+        top: 50%;
         left: 0;
-        top: 9rem;
-        z-index: 200;
 
-        width: 13.5rem;
-        height: 11.5rem;
-        transform: translateX(-50%);
-    }
-
-    &__orb {
-        position: absolute;
-        left: 0;
-        bottom: 3.5rem;
-        z-index: 200;
-
-        width: 17.6rem;
-        height: 22.6rem;
-        transform: translateX(-25%);
+        height: 40rem;
+        transform: translateY(-50%);
     }
 
     &__candy {
         position: absolute;
-        right: 0;
         bottom: 0;
-        z-index: 200;
+        right: 0;
 
-        width: 20rem;
-        height: 19rem;
+        height: 22.2rem;
         transform: translateX(-20%);
     }
 }

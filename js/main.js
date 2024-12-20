@@ -1,6 +1,8 @@
 import setHeaderPadding from "./modules/setHeaderPadding.js";
 import nyCarouselSwiper from "./modules/nyCarouselSwiper.js";
 
+import Modal from "./modules/Modal.js";
+
 document.addEventListener("DOMContentLoaded", () => {
     const body = document.body;
 
@@ -9,6 +11,12 @@ document.addEventListener("DOMContentLoaded", () => {
         body.classList.remove('preload');
     }, 500);
 
+    const modal = new Modal({
+        isOpen: (modal) => {
+        },
+        isClose: (modal) => {
+        },
+    });
 
     setHeaderPadding();
     nyCarouselSwiper();

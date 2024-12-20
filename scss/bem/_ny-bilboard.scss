@@ -4,103 +4,130 @@
         margin-bottom: 4.4rem;
     }
 
-    &__site-container {
-        position: relative;
-        padding-block: 0 14rem;
-        margin-bottom: -10rem;
-
-        &::after {
-            position: absolute;
-            inset: 0;
-            z-index: 200;
-
-            background-image: url('./../images/threes.png');
-            background-position-x: 0;
-            background-position-y: 100%;
-            background-repeat: no-repeat;
-            background-size: contain;
-            pointer-events: none;
-            content: "";
-        }
-    }
-
     &__body {
+        position: relative;
+
         display: flex;
-        flex-direction: column;
         align-items: stretch;
     }
 
+    &__article {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.5rem;
+
+        padding: 2rem 0 22rem;
+    }
+
     &__title {
-        color: #5229A1;
-        text-align: center;
+        @include font(5.8rem, 1.10, 800);
+
+        max-width: min-content;
+        transform: rotate(-1.58deg);
+
+        color: #FFF;
+        font-style: italic;
+        text-shadow: -8.457px 2.662px 0.108px #ff5129,-12.927px -0.603px 9.397px #ff5129,-8.53px 3.554px 10.687px #ff5129,-3.554px 1.422px 4.265px #ff5129,23.289px 8.711px 45.132px #ff5129;
         text-transform: uppercase;
-
-        @include font(6rem, 1.10, 800);
+        white-space: nowrap;
     }
 
-    &__bilboard-wrapper {
-        position: relative;
+    &__btn {
+        @include font(2.4rem, 1.10, 800);
 
+        display: flex;
 
+        max-width: min-content;
+        margin-top: 1rem;
+        padding: 1.2rem 3rem;
+        transform: rotate(-1.58deg);
 
-        width: 100%;
-        aspect-ratio: 1.35 / 1;
+        color: #FFF;
+        text-transform: uppercase;
+        white-space: nowrap;
+
+        background: #FF5129;
+        border-radius: 76.7rem;
     }
 
-    &__bilboard-image {
+    &__text {
+        @include font(1.6rem, 1.10, 500);
+
+        max-width: 58rem;
+    }
+
+    &__tooltip {
         position: absolute;
-        inset: 0;
+        bottom: 0;
+        left: 0;
 
-        img {
-            display: block;
+        max-width: min-content;
+
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 100;
+
             width: 100%;
-            object-fit: contain;
-            object-position: center;
+            height: 100%;
+
+            background-image: url('data:image/svg+xml, %3Csvg%20width%3D%22617%22%20height%3D%22175%22%20viewBox%3D%220%200%20617%20175%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M610.5%2091L611.335%2090.449L610.5%2091ZM332.5%20129L332.647%20129.989L332.5%20129ZM272.544%20173.793C272.706%20174.321%20273.265%20174.618%20273.793%20174.456L282.398%20171.817C282.926%20171.655%20283.222%20171.096%20283.061%20170.568C282.899%20170.04%20282.339%20169.743%20281.811%20169.905L274.163%20172.251L271.817%20164.602C271.655%20164.074%20271.096%20163.778%20270.568%20163.939C270.04%20164.101%20269.743%20164.661%20269.905%20165.189L272.544%20173.793ZM522.901%2063.5202C533.549%2062.013%20551.644%2063.5043%20568.942%2068.1831C577.579%2070.5191%20585.976%2073.6394%20593.116%2077.5497C600.265%2081.4649%20606.092%2086.1383%20609.665%2091.551L611.335%2090.449C607.515%2084.6639%20601.383%2079.7968%20594.077%2075.7956C586.762%2071.7895%20578.208%2068.6174%20569.464%2066.2524C552.001%2061.529%20533.62%2059.983%20522.62%2061.5399L522.901%2063.5202ZM609.665%2091.551C614.148%2098.3399%20615.259%20105.181%20613.68%20111.517C612.096%20117.875%20607.775%20123.836%20601.19%20128.768C588.011%20138.637%20565.925%20144.243%20539.641%20140.51L539.359%20142.49C566.028%20146.278%20588.685%20140.631%20602.389%20130.369C609.245%20125.234%20613.899%20118.91%20615.621%20112C617.348%20105.068%20616.094%2097.6572%20611.335%2090.449L609.665%2091.551ZM539.641%20140.51C533.077%20139.578%20528.534%20138.209%20525.56%20136.627C522.588%20135.046%20521.306%20133.323%20520.981%20131.712C520.654%20130.087%20521.237%20128.276%20522.663%20126.393C524.083%20124.517%20526.258%20122.685%20528.844%20121.094C534.041%20117.898%20540.619%20115.843%20545.458%20116.232C547.865%20116.425%20549.695%20117.207%20550.789%20118.581C551.874%20119.942%20552.407%20122.1%20551.753%20125.429L553.716%20125.814C554.436%20122.144%20553.931%20119.314%20552.354%20117.335C550.787%20115.368%20548.332%20114.456%20545.618%20114.238C540.217%20113.804%20533.214%20116.058%20527.796%20119.391C525.075%20121.064%20522.684%20123.051%20521.068%20125.186C519.458%20127.313%20518.536%20129.703%20519.021%20132.107C519.508%20134.524%20521.356%20136.656%20524.621%20138.393C527.884%20140.129%20532.685%20141.542%20539.359%20142.49L539.641%20140.51ZM551.753%20125.429C549.074%20139.078%20540.445%20150.101%20525.051%20156.718C509.611%20163.356%20487.336%20165.565%20457.457%20161.399L457.181%20163.38C487.249%20167.572%20509.935%20165.393%20525.841%20158.556C541.795%20151.698%20550.9%20140.159%20553.716%20125.814L551.753%20125.429ZM457.457%20161.399C427.668%20157.247%20409.755%20147.033%20392.581%20138.74C375.356%20130.422%20358.924%20124.074%20332.353%20128.011L332.647%20129.989C358.654%20126.136%20374.658%20132.306%20391.711%20140.541C408.815%20148.8%20427.022%20159.176%20457.181%20163.38L457.457%20161.399ZM332.353%20128.011C325.388%20129.043%20313.741%20134.137%20302.248%20141.987C290.737%20149.85%20279.221%20160.586%20272.617%20173.031L274.383%20173.969C280.779%20161.914%20292.013%20151.4%20303.377%20143.638C314.759%20135.863%20326.112%20130.957%20332.647%20129.989L332.353%20128.011Z%22%20fill%3D%22%23FF5129%22%2F%3E%0A%3Crect%20x%3D%223.07031%22%20y%3D%220.34082%22%20width%3D%22525%22%20height%3D%2288%22%20rx%3D%2215%22%20transform%3D%22rotate(2%203.07031%200.34082)%22%20fill%3D%22%23FF5129%22%2F%3E%0A%3Crect%20x%3D%223.07031%22%20y%3D%220.34082%22%20width%3D%22525%22%20height%3D%2288%22%20rx%3D%2215%22%20transform%3D%22rotate(2%203.07031%200.34082)%22%20fill%3D%22url(%23paint0_linear_2002_8330)%22%2F%3E%0A%3Cdefs%3E%0A%3ClinearGradient%20id%3D%22paint0_linear_2002_8330%22%20x1%3D%22-49.9796%22%20y1%3D%221.85233%22%20x2%3D%22529.762%22%20y2%3D%2241.6439%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%0A%3Cstop%20stop-color%3D%22%235229A1%22%2F%3E%0A%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23FF5129%22%2F%3E%0A%3C%2FlinearGradient%3E%0A%3C%2Fdefs%3E%0A%3C%2Fsvg%3E');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            content: "";
+        }
+
+        &>p {
+            @include font(2.6rem, 1.10, 800);
+
+            position: relative;
+            z-index: 200;
+
+            padding: 4rem 12rem 11rem 2rem;
+            transform: rotate(2deg);
+
+            color: #FFF;
+            text-transform: uppercase;
         }
     }
 
-    &__bilboard-text {
-        position: absolute;
-        left: 50%;
-
-        max-width: 35ch;
-        transform: translate(-56%, 40%);
-
-        color: #FFF;
-        text-align: center;
-
-        @include font(3rem, 1.2, 800);
+    &__right {
+        position: relative;
+        flex: 1 1 auto;
     }
 
-    &__bilboard-slogan {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        @include font(4.33rem, 1.1, 800);
+    &__bilboard-image {
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
 
-        width: 33ch;
-
-        color: #5229A1;
-        text-transform: uppercase;
+            transform: translate(-50%, -55%);
+            max-width: 125%;
+        }
     }
 
+    &__gift,
     &__orb {
         position: absolute;
-        top: 35%;
-        left: 14%;
-        z-index: 200;
-
-        width: 17rem;
-        height: 17rem;
     }
 
     &__gift {
-        position: absolute;
-        top: 1%;
-        right: 1%;
-        z-index: 200;
+        left: 0;
+        bottom: 0;
 
-        width: 19rem;
-        height: 19rem;
+        width: 18.5rem;
+        transform: translate(40%, 0%);
+    }
+
+    &__orb {
+        top: 0;
+        right: 0;
+
+        width: 10rem;
+        transform: translateY(50%);
     }
 }
