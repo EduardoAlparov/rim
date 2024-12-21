@@ -206,6 +206,12 @@
         }
     }
 
+    @else if $class == portait-tablet {
+        @media only screen and (max-width: (991px)) {
+            @content;
+        }
+    }
+
     @else if $class == small-tablet {
         @media only screen and (max-width: (768px)) {
             @content;
@@ -270,6 +276,12 @@
 
     @else if $class == mobile {
         @media only screen and (min-width: 577px) {
+            @content;
+        }
+    }
+
+    @else if $class == small-mobile {
+        @media only screen and (min-width: 375px) {
             @content;
         }
     }

@@ -3,13 +3,13 @@ html {
     box-sizing: border-box;
     -webkit-text-size-adjust: 100%;
 
-    @include breakpointMF(mobile) {
+    @include breakpointMF(small-mobile) {
         font-size: 10px;
     }
 
-    @include breakpointMF(tablet) {
+    @include breakpointMF(portait-tablet) {
         font-size: 10px;
-        font-size: unquote("clamp(9px, 0.52vw, 25px)");
+        font-size: unquote("clamp(4.3px, 0.47vw, 25px)");
     }
 
     @include noHighlight();
@@ -24,14 +24,3 @@ body {
 
     @include text-default;
 }
-
-.h1 {
-    @include h1;
-}
-
-.h2 {
-    @include h2;
-}
-
-@include color('white', var(--white, #fff));
-@include color('text', var(--text, #333));

@@ -29,7 +29,7 @@
                         <div class="page-header__controls">
                             <form action="" class="page-header__search-bar search-bar search-bar--show-dropdown">
                                 <i></i>
-                                <input type="search" class="search-bar__input" placeholder="Выбрать регион подарка" required>
+                                <input name="desktop-search" type="search" class="search-bar__input" placeholder="Выбрать регион подарка" required>
                                 <div class="search-bar__dropdown">
                                     <ul class="search-bar__dropdown-list">
                                         <li class="search-bar__dropdown-item">
@@ -88,6 +88,77 @@
                             <a href="#" class="page-header__btn" data-path="modal">
                                 Выбрать подарок
                             </a>
+                            <button class="page-header__burger js-burger-menu" type="button">
+                                <svg class="icon icon-cross">
+                                    <use xlink:href="./images/sprite.svg#cross"></use>
+                                </svg>
+                                <svg class="icon icon-burger">
+                                    <use xlink:href="./images/sprite.svg#burger"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="page-header__mobile-search">
+                            <form action="" class="page-header__mobile-search-bar search-bar search-bar--static search-bar--show-dropdown">
+                                <i></i>
+                                <input name="desktop-search" type="search" class="search-bar__input" placeholder="Выбрать регион подарка" required>
+                                <div class="search-bar__dropdown">
+                                    <ul class="search-bar__dropdown-list">
+                                        <li class="search-bar__dropdown-item">
+                                            <a href="#" class="search-bar__dropdown-link">
+                                                Татарстан
+                                            </a>
+                                        </li>
+                                        <li class="search-bar__dropdown-item">
+                                            <a href="#" class="search-bar__dropdown-link">
+                                                Москва
+                                            </a>
+                                        </li>
+                                        <li class="search-bar__dropdown-item">
+                                            <a href="#" class="search-bar__dropdown-link">
+                                                Санкт-Петербург
+                                            </a>
+                                        </li>
+                                        <li class="search-bar__dropdown-item">
+                                            <a href="#" class="search-bar__dropdown-link">
+                                                Свердловская область
+                                            </a>
+                                        </li>
+                                        <li class="search-bar__dropdown-item">
+                                            <a href="#" class="search-bar__dropdown-link">
+                                                Башкортостан
+                                            </a>
+                                        </li>
+                                        <li class="search-bar__dropdown-item">
+                                            <a href="#" class="search-bar__dropdown-link">
+                                                Челябинская область
+                                            </a>
+                                        </li>
+                                        <li class="search-bar__dropdown-item">
+                                            <a href="#" class="search-bar__dropdown-link">
+                                                Самарская область
+                                            </a>
+                                        </li>
+                                        <li class="search-bar__dropdown-item">
+                                            <a href="#" class="search-bar__dropdown-link">
+                                                Нижегородская область
+                                            </a>
+                                        </li>
+                                        <li class="search-bar__dropdown-item">
+                                            <a href="#" class="search-bar__dropdown-link">
+                                                Красноярский край
+                                            </a>
+                                        </li>
+                                        <li class="search-bar__dropdown-item">
+                                            <a href="#" class="search-bar__dropdown-link">
+                                                Пермский край
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </form>
+                            <a href="#" class="page-header__mobile-btn" data-path="modal">
+                                Выбрать подарок
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -105,6 +176,7 @@
                                 </div>
                             </div>
                             <img class="ny-welcome__gift" src="./images/gift-big.png" alt="">
+                            <img class="ny-welcome__mobile-gift" src="./images/gift-small.png" alt="">
                             <img class="ny-welcome__candy" src="./images/candy.png" alt="">
                         </div>
                     </div>
@@ -156,7 +228,10 @@
                                         <h3 class="ny-info__title">
                                             Татарстан
                                         </h3>
-                                        <div class="ny-info__cities">
+                                        <div class="ny-info__cities ny-info__cities--mobile show-on-mobile">
+                                            Казань, Набережные Челны и другие города
+                                        </div>
+                                        <div class="ny-info__cities ny-info__cities--desktop hide-on-mobile">
                                             Казань, Агрыз, Азнакаево, Алексеевское, Альметьевск, Высокая гора, Куюки, Круглое поле, Песчаные Ковали, Усады, Шали,
                                             Тетюши, Арск, Бугульма, Буинск, Елабуга, Заинск, Зеленодольск, Кукмор, Лаишевский район, Лениногорск, Мамадыш,
                                             Менделеевск, Мензелинск, Набережные Челны, Нижнекамск, Нурлат, Пестречинский район, Чистополь
@@ -175,7 +250,7 @@
                                     <ul class="ny-info__list">
                                         <li class="ny-info__item">
                                             <span class="ny-info__value">95,97%</span>
-                                            <span class="ny-info__key">доля&nbsp;рынка</span>
+                                            <span class="ny-info__key">доля рынка</span>
                                         </li>
                                         <li class="ny-info__item">
                                             <span class="ny-info__value">4 294</span>
@@ -201,144 +276,6 @@
                                                     <p class="ny-slide__desc">
                                                         Книга о пацанах, участниках бесчисленных молодежных группировок, наводнивших поздний Советский Союз, тех, кто бил и
                                                         попадал под раздачу — профессионально, ежедневно, беспощадно.
-                                                    </p>
-                                                    <a href="#" class="ny-slide__button">
-                                                        <i></i>
-                                                        Заказать
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="ny-carousel__slide">
-                                            <div class="ny-carousel__ny-slide ny-slide">
-                                                <div class="ny-slide__image">
-                                                    <img src="./images/slide-image.png" alt="">
-                                                </div>
-                                                <div class="ny-slide__info">
-                                                    <h4 class="ny-slide__title">
-                                                        Мистическая Москва
-                                                    </h4>
-                                                    <p class="ny-slide__desc">
-                                                        Все секреты Москвы — в этой книге, а главный секрет охватной рекламы в Москве — это реклама на такси «РИМ DRIVE».
-                                                    </p>
-                                                    <a href="#" class="ny-slide__button">
-                                                        <i></i>
-                                                        Заказать
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="ny-carousel__slide">
-                                            <div class="ny-carousel__ny-slide ny-slide">
-                                                <div class="ny-slide__image">
-                                                    <img src="./images/slide-image.png" alt="">
-                                                </div>
-                                                <div class="ny-slide__info">
-                                                    <h4 class="ny-slide__title">
-                                                        Мистическая Москва
-                                                    </h4>
-                                                    <p class="ny-slide__desc">
-                                                        Все секреты Москвы — в этой книге, а главный секрет охватной рекламы в Москве — это реклама на такси «РИМ DRIVE».
-                                                    </p>
-                                                    <a href="#" class="ny-slide__button">
-                                                        <i></i>
-                                                        Заказать
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="ny-locations__item">
-                                <article class="ny-locations__item-left ny-info">
-                                    <div class="ny-info__head">
-                                        <h3 class="ny-info__title">
-                                            Татарстан
-                                        </h3>
-                                        <div class="ny-info__cities">
-                                            Казань, Агрыз, Азнакаево, Алексеевское, Альметьевск, Высокая гора, Куюки, Круглое поле, Песчаные Ковали, Усады, Шали,
-                                            Тетюши, Арск, Бугульма, Буинск, Елабуга, Заинск, Зеленодольск, Кукмор, Лаишевский район, Лениногорск, Мамадыш,
-                                            Менделеевск, Мензелинск, Набережные Челны, Нижнекамск, Нурлат, Пестречинский район, Чистополь
-                                        </div>
-                                        <div class="ny-info__desc">
-                                            <p class="ny-info__text">
-                                                Казань знаменита не только эчпочмаками, книгами про уличные банды и аутентичными аксессуарами, но еще и тем, что здесь
-                                                началась наша история.
-                                            </p>
-                                            <p class="ny-info__text">
-                                                В столице Татарстана мы являемся абсолютным лидером отрасли и имеем доминирующую долю присутствия. Занимаем 95,97%
-                                                рынка, размещая рекламу на 4 294 поверхностях, из которых 2 520 — диджитальные.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <ul class="ny-info__list">
-                                        <li class="ny-info__item">
-                                            <span class="ny-info__value">95,97%</span>
-                                            <span class="ny-info__key">доля&nbsp;рынка</span>
-                                        </li>
-                                        <li class="ny-info__item">
-                                            <span class="ny-info__value">4 294</span>
-                                            <span class="ny-info__key">рекламные поверхности</span>
-                                        </li>
-                                        <li class="ny-info__item">
-                                            <span class="ny-info__value">2 520</span>
-                                            <span class="ny-info__key">рекламных digital-поверхности</span>
-                                        </li>
-                                    </ul>
-                                </article>
-                                <div class="ny-locations__item-right ny-carousel">
-                                    <ul class="ny-carousel__list">
-                                        <li class="ny-carousel__slide">
-                                            <div class="ny-carousel__ny-slide ny-slide">
-                                                <div class="ny-slide__image">
-                                                    <img src="./images/slide-image.png" alt="">
-                                                </div>
-                                                <div class="ny-slide__info">
-                                                    <h4 class="ny-slide__title">
-                                                        Книга «Слово пацана»
-                                                    </h4>
-                                                    <p class="ny-slide__desc">
-                                                        Книга о пацанах, участниках бесчисленных молодежных группировок, наводнивших поздний Советский Союз, тех, кто бил и
-                                                        попадал под раздачу — профессионально, ежедневно, беспощадно.
-                                                    </p>
-                                                    <a href="#" class="ny-slide__button">
-                                                        <i></i>
-                                                        Заказать
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="ny-carousel__slide">
-                                            <div class="ny-carousel__ny-slide ny-slide">
-                                                <div class="ny-slide__image">
-                                                    <img src="./images/slide-image.png" alt="">
-                                                </div>
-                                                <div class="ny-slide__info">
-                                                    <h4 class="ny-slide__title">
-                                                        Мистическая Москва
-                                                    </h4>
-                                                    <p class="ny-slide__desc">
-                                                        Все секреты Москвы — в этой книге, а главный секрет охватной рекламы в Москве — это реклама на такси «РИМ DRIVE».
-                                                    </p>
-                                                    <a href="#" class="ny-slide__button">
-                                                        <i></i>
-                                                        Заказать
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="ny-carousel__slide">
-                                            <div class="ny-carousel__ny-slide ny-slide">
-                                                <div class="ny-slide__image">
-                                                    <img src="./images/slide-image.png" alt="">
-                                                </div>
-                                                <div class="ny-slide__info">
-                                                    <h4 class="ny-slide__title">
-                                                        Мистическая Москва
-                                                    </h4>
-                                                    <p class="ny-slide__desc">
-                                                        Все секреты Москвы — в этой книге, а главный секрет охватной рекламы в Москве — это реклама на такси «РИМ DRIVE».
                                                     </p>
                                                     <a href="#" class="ny-slide__button">
                                                         <i></i>
@@ -433,6 +370,23 @@
                                 </p>
                             </li>
                         </ul>
+                    </div>
+                </section>
+                <section class="section ny-end">
+                    <div class="ny-end__site-container">
+                        <h2 class="ny-end__title">
+                            Ты дошёл до конца списка подарков! Выбирай свой скорее, если не успел.
+                        </h2>
+                        <div class="ny-end__btn ny-bilboard__btn">
+                            Да это сложно, но мы верим в тебя ;)
+                        </div>
+                        <div class="ny-end__image">
+                            <picture>
+                                <source media="(max-width:991px)" srcset="./images/end-m.png"/>
+                                <source media="(min-width:992px)" srcset="./images/end.png"/>
+                                <img class="lazy" src="./images/end.png" alt="hero image">
+                            </picture>
+                        </div>
                     </div>
                 </section>
             </main>

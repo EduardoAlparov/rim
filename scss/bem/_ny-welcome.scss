@@ -16,16 +16,22 @@
         flex-direction: column;
         gap: 8rem;
 
-        padding-block: 5.7rem;
+        overflow: hidden;
+        padding-block: 5.3rem 4.6rem;
 
         background: linear-gradient(158deg, #5229A1 -0.74%, #FF5129 101.44%);
         border-radius: 1.5rem;
+
+        @include breakpointMF(portait-tablet) {
+            padding-block: 5.7rem;
+        }
     }
 
     &__body::after {
         position: absolute;
         inset: 0;
         z-index: 200;
+
 
         background-image: url('./../images/intro-back.png');
         background-position: top left;
@@ -39,23 +45,36 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        gap: 3rem;
+        gap: 1.5rem;
 
         color: #FFF;
 
         &>* {
             text-align: center;
         }
+
+        @include breakpointMF(portait-tablet) {
+            gap: 3rem;
+        }
     }
 
     &__title {
-        @include font(5.6rem, 1.10, 800);
+        @include font(2.4rem, 1.10, 800);
+
+        @include breakpointMF(portait-tablet) {
+            @include font(5.6rem, 1.10, 800);
+        }
     }
 
     &__text {
-        @include font(3.2rem, 1.10, 500);
-        max-width: 40ch;
+        @include font(1.6rem, 1.10, 500);
+        max-width: 25ch;
         font-style: italic;
+
+        @include breakpointMF(portait-tablet) {
+            @include font(3.2rem, 1.10, 500);
+            max-width: 40ch;
+        }
     }
 
     &__gift {
@@ -63,8 +82,26 @@
         top: 50%;
         left: 0;
 
+        display: none;
+
         height: 40rem;
         transform: translateY(-50%);
+
+        @include breakpointMF(portait-tablet) {
+            display: block;
+        }
+    }
+
+    &__mobile-gift {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        height: 10rem;
+
+        @include breakpointMF(portait-tablet) {
+            display: none;
+        }
     }
 
     &__candy {
@@ -72,7 +109,12 @@
         bottom: 0;
         right: 0;
 
-        height: 22.2rem;
-        transform: translateX(-20%);
+        height: 12rem;
+        transform: rotate(-13.326deg) translate(0%, 30%);
+
+        @include breakpointMF(portait-tablet) {
+            height: 22.2rem;
+            transform: translateX(-20%);
+        }
     }
 }

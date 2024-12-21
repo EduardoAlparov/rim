@@ -3,7 +3,7 @@
     top: 0;
     right: 0;
     left: 0;
-    z-index: 200;
+    z-index: 2000;
 
     width: 100%;
     max-width: 100%;
@@ -19,17 +19,27 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0.7rem 2rem;
+        flex-wrap: wrap;
+        padding: 1.5rem;
 
         background-color: var(---back, #F1F1F1);
         border-radius: 1.5rem;
+
+        @include breakpointMF(portait-tablet) {
+            padding: 0.7rem 2rem;
+        }
     }
 
     &__logo {
         display: block;
 
-        width: 18.4rem;
-        height: 3.6rem;
+        width: 11.8rem;
+        height: 2.3rem;
+
+        @include breakpointMF(portait-tablet) {
+            width: 18.4rem;
+            height: 3.6rem;
+        }
     }
 
     &__controls {
@@ -41,16 +51,26 @@
     }
 
     &__search-bar {
+        display: none;
         flex-shrink: 0;
 
         &.search-bar {
             width: 26rem;
+            z-index: 300;
+        }
+
+        @include breakpointMF(portait-tablet) {
+            display: block;
         }
     }
 
+    &__mobile-btn,
     &__btn {
+
+
         flex-shrink: 0;
-        width: max-content;
+
+        width: 100%;
         height: 4rem;
         padding: 1rem 1.6rem;
 
@@ -62,5 +82,82 @@
         text-align: center;
         @include font(1.8rem, 1, 800);
 
+        &:not(.page-header__mobile-btn) {
+            display: none;
+            width: max-content;
+
+            @include breakpointMF(portait-tablet) {
+                display: block;
+            }
+        }
+    }
+
+    &__burger {
+        position: relative;
+
+        display: grid;
+        place-content: center;
+        place-items: center;
+
+        width: 4rem;
+        height: 3.6rem;
+        flex-shrink: 0;
+
+        .icon {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+
+            &.icon-cross {
+                width: 1.8rem;
+                height: 1.8rem;
+
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            &.icon-burger {
+                width: 2rem;
+                height: 1.6rem;
+            }
+        }
+
+        @include breakpointMF(portait-tablet) {
+            display: none;
+        }
+    }
+
+    &__mobile-search {
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+
+        flex: 1 1 100%;
+        margin-block: 2.5rem 0.5rem;
+
+        @include breakpointMF(portait-tablet) {
+            display: none !important;
+        }
+    }
+}
+
+
+.burger-menu-is-open {
+    .page-header__burger {
+        .icon {
+            &.icon-cross {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            &.icon-burger {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    }
+
+    .page-header__mobile-search {
+        display: flex;
     }
 }

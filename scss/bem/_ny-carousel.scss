@@ -8,6 +8,10 @@
     }
 
     &__slide {
-        flex-basis: calc(100% / 3 - (5rem * 2 / 3));
+        flex-basis: 100%;
+
+        @include breakpointMF(portait-tablet) {
+            flex-basis: calc(100% / 3 - (5rem * 2 / 3));
+        }
     }
 }

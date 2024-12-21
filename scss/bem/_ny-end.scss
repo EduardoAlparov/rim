@@ -1,0 +1,73 @@
+.ny-end {
+    overflow: hidden;
+
+    &__site-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        @include font(2.72rem, 1.0, 800);
+
+        max-width: 30ch;
+        margin-bottom: 1rem;
+        transform: rotate(-1.58deg);
+
+        color: #5229A1;
+        font-style: italic;
+        text-align: center;
+
+
+        @include breakpointMF(portait-tablet) {
+            @include font(5.2rem, 1.0, 800);
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__btn {
+        &.ny-bilboard__btn {
+            @include font(1.4rem, 1.10, 800);
+
+            @include breakpointMF(portait-tablet) {
+                @include font(2.7rem, 1.10, 800);
+            }
+        }
+    }
+
+    &__image {
+        position: relative;
+
+        width: 100%;
+        height: 28rem;
+
+        @include breakpointMF(portait-tablet) {
+            height: 40rem;
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 50%;
+
+
+            display: block;
+
+            width: 100%;
+            max-width: unset;
+            transform: translate(-50%, 0%);
+
+            object-fit: contain;
+            object-position: center;
+
+            @include breakpointMF(portait-tablet) {
+                top: unset;
+                bottom: 0;
+
+                width: 160%;
+                max-width: unset;
+                transform: translate(-55%, 0%);
+            }
+        }
+    }
+}

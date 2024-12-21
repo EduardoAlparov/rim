@@ -21,9 +21,9 @@
   --transition: 0.3s ease;
 }
 
-@media only screen and (min-width: 577px) {
+@media only screen and (min-width: 375) {
   :root {
-    --content-padding: 1.5rem;
+    --content-padding: 1rem;
   }
 }
 
@@ -36,5 +36,11 @@
 @media only screen and (min-width: 1024px) {
   :root {
     --content-padding: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  :root {
+    --max-container-width: 120rem;
   }
 }

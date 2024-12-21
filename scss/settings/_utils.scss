@@ -78,3 +78,15 @@ textarea:required:valid {
     top: 0;
     width: 100%;
 }
+
+.show-on-mobile {
+    @include breakpointMF(portait-tablet) {
+        display: none !important;
+    }
+}
+
+.hide-on-mobile {
+    @include breakpoint(portait-tablet) {
+        display: none !important;
+    }
+}

@@ -12,4 +12,15 @@
         <circle cx="15" cy="15" r="15" fill="#5229A1"/>
         <path d="M17.25 7.5L9.75 15L17.25 22.5" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
     </symbol>
+
+    <symbol id="burger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20" fill="none">
+        <path d="M2 2H22" stroke="#919191" stroke-width="3" stroke-linecap="round"/>
+        <path d="M2 10H22" stroke="#919191" stroke-width="3" stroke-linecap="round"/>
+        <path d="M2 18H22" stroke="#919191" stroke-width="3" stroke-linecap="round"/>
+    </symbol>
+
+    <symbol id="cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" fill="none">
+        <path d="M1.92969 16.0711L16.0718 1.92893" stroke="#919191" stroke-width="3" stroke-linecap="round"/>
+        <path d="M1.92969 1.92889L16.0718 16.071" stroke="#919191" stroke-width="3" stroke-linecap="round"/>
+    </symbol>
 </svg>

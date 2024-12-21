@@ -1,6 +1,10 @@
 .ny-stats {
     position: relative;
 
+    &.section {
+        margin-bottom: 6rem;
+    }
+
     &__image {
         position: absolute;
         top: 0;
@@ -22,7 +26,11 @@
         position: relative;
         z-index: 200;
 
-        padding-block: 23rem 30rem;
+        padding-block: 10vw;
+
+        @include breakpointMF(portait-tablet) {
+            padding-block: 23rem 30rem;
+        }
     }
 
     &__list {
@@ -30,10 +38,16 @@
         flex-wrap: wrap;
         align-items: flex-end;
         justify-content: flex-end;
-        gap: 4rem;
+        gap: 2rem;
 
         margin-left: auto;
-        max-width: 70rem;
+        max-width: 26rem;
+
+        @include breakpointMF(portait-tablet) {
+            gap: 4rem;
+
+            max-width: 50rem;
+        }
     }
 
     &__item {
@@ -54,28 +68,43 @@
                 color: #FF5129;
                 text-shadow: 0px 0px 12.56px #FF5129;
 
-                @include font(16.8rem, 1.10, 800);
+                @include font(6.16rem, 1.10, 800);
+
+                @include breakpointMF(portait-tablet) {
+                    @include font(16.8rem, 1.10, 800);
+                }
             }
 
             .ny-stats__text {
-                @include font(3.4rem, 1.10, 800);
+                @include font(1.2rem, 1.10, 800);
+
+                @include breakpointMF(portait-tablet) {
+                    @include font(3.4rem, 1.10, 800);
+                }
             }
         }
     }
 
     &__number {
-        @include font(11.32rem, 1.10, 800);
+        @include font(4.1rem, 1.10, 800);
         letter-spacing: -0.01em;
         text-transform: uppercase;
         white-space: nowrap;
         filter: drop-shadow(189.057px 87.2925px 58.2827px rgba(0, 0, 0, 0.01)) drop-shadow(121.038px 55.8488px 53.2833px rgba(0, 0, 0, 0.07)) drop-shadow(68.0842px 31.4437px 44.9948px rgba(0, 0, 0, 0.25)) drop-shadow(30.2596px 13.9457px 33.3514px rgba(0, 0, 0, 0.43));
+
+        @include breakpointMF(portait-tablet) {
+            @include font(11.32rem, 1.10, 800);
+        }
     }
 
     &__text {
-        @include font(3.2rem, 1.10, 800);
+        @include font(1.18rem, 1.10, 800);
         text-transform: uppercase;
         white-space: nowrap;
         filter: drop-shadow(189.057px 87.2925px 58.2827px rgba(0, 0, 0, 0.01)) drop-shadow(121.038px 55.8488px 53.2833px rgba(0, 0, 0, 0.07)) drop-shadow(68.0842px 31.4437px 44.9948px rgba(0, 0, 0, 0.25)) drop-shadow(30.2596px 13.9457px 33.3514px rgba(0, 0, 0, 0.43));
 
+        @include breakpointMF(portait-tablet) {
+            @include font(3.2rem, 1.10, 800);
+        }
     }
 }
