@@ -1,8 +1,12 @@
 import setHeaderPadding from "./modules/setHeaderPadding.js";
 import nyCarouselSwiper from "./modules/nyCarouselSwiper.js";
 import burgerMenu from "./modules/burgerMenu.js";
+import selectSetValue from "./modules/selectSetValue.js";
 
 import Modal from "./modules/Modal.js";
+import masks from "./modules/masks.js";
+import daysMask from "./modules/daysMask.js";
+import validation from "./modules/validation.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     const body = document.body;
@@ -20,7 +24,12 @@ document.addEventListener("DOMContentLoaded", () => {
         },
     });
 
+    masks();
+    daysMask();
+    validation();
+
     burgerMenu();
     setHeaderPadding();
     nyCarouselSwiper();
+    selectSetValue();
 })

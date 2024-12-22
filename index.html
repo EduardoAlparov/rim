@@ -16,6 +16,7 @@
             rel="preload stylesheet"
             as="style"
             href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
         <link rel="stylesheet" href="./styles.css">
     </head>
     <body class="preload">
@@ -29,21 +30,27 @@
                         <div class="page-header__controls">
                             <form action="" class="page-header__search-bar search-bar search-bar--show-dropdown">
                                 <i></i>
-                                <input name="desktop-search" type="search" class="search-bar__input" placeholder="Выбрать регион подарка" required>
+                                <input
+                                    name="desktop-search"
+                                    type="search"
+                                    class="search-bar__input"
+                                    autocomplete="off"
+                                    placeholder="Выбрать регион подарка"
+                                    required>
                                 <div class="search-bar__dropdown">
                                     <ul class="search-bar__dropdown-list">
                                         <li class="search-bar__dropdown-item">
-                                            <a href="#" class="search-bar__dropdown-link">
+                                            <a href="#loc-tat" class="search-bar__dropdown-link">
                                                 Татарстан
                                             </a>
                                         </li>
                                         <li class="search-bar__dropdown-item">
-                                            <a href="#" class="search-bar__dropdown-link">
+                                            <a href="#loc-msc" class="search-bar__dropdown-link">
                                                 Москва
                                             </a>
                                         </li>
                                         <li class="search-bar__dropdown-item">
-                                            <a href="#" class="search-bar__dropdown-link">
+                                            <a href="#loc-stp" class="search-bar__dropdown-link">
                                                 Санкт-Петербург
                                             </a>
                                         </li>
@@ -222,7 +229,7 @@
                 <section class="section ny-locations">
                     <div class="ny-locations__site-container">
                         <ul class="ny-locations__list">
-                            <li class="ny-locations__item">
+                            <li class="ny-locations__item" id="loc-tat">
                                 <article class="ny-locations__item-left ny-info">
                                     <div class="ny-info__head">
                                         <h3 class="ny-info__title">
@@ -276,6 +283,250 @@
                                                     <p class="ny-slide__desc">
                                                         Книга о пацанах, участниках бесчисленных молодежных группировок, наводнивших поздний Советский Союз, тех, кто бил и
                                                         попадал под раздачу — профессионально, ежедневно, беспощадно.
+                                                    </p>
+                                                    <a href="#" class="ny-slide__button">
+                                                        <i></i>
+                                                        Заказать
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="ny-carousel__slide">
+                                            <div class="ny-carousel__ny-slide ny-slide">
+                                                <div class="ny-slide__image">
+                                                    <img src="./images/slide-image.png" alt="">
+                                                </div>
+                                                <div class="ny-slide__info">
+                                                    <h4 class="ny-slide__title">
+                                                        Мистическая Москва
+                                                    </h4>
+                                                    <p class="ny-slide__desc">
+                                                        Все секреты Москвы — в этой книге, а главный секрет охватной рекламы в Москве — это реклама на такси «РИМ DRIVE».
+                                                    </p>
+                                                    <a href="#" class="ny-slide__button">
+                                                        <i></i>
+                                                        Заказать
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="ny-carousel__slide">
+                                            <div class="ny-carousel__ny-slide ny-slide">
+                                                <div class="ny-slide__image">
+                                                    <img src="./images/slide-image.png" alt="">
+                                                </div>
+                                                <div class="ny-slide__info">
+                                                    <h4 class="ny-slide__title">
+                                                        Мистическая Москва
+                                                    </h4>
+                                                    <p class="ny-slide__desc">
+                                                        Все секреты Москвы — в этой книге, а главный секрет охватной рекламы в Москве — это реклама на такси «РИМ DRIVE».
+                                                    </p>
+                                                    <a href="#" class="ny-slide__button">
+                                                        <i></i>
+                                                        Заказать
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="ny-carousel__slide">
+                                            <div class="ny-carousel__ny-slide ny-slide">
+                                                <div class="ny-slide__image">
+                                                    <img src="./images/slide-image.png" alt="">
+                                                </div>
+                                                <div class="ny-slide__info">
+                                                    <h4 class="ny-slide__title">
+                                                        Мистическая Москва
+                                                    </h4>
+                                                    <p class="ny-slide__desc">
+                                                        Все секреты Москвы — в этой книге, а главный секрет охватной рекламы в Москве — это реклама на такси «РИМ DRIVE».
+                                                    </p>
+                                                    <a href="#" class="ny-slide__button">
+                                                        <i></i>
+                                                        Заказать
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="ny-carousel__slide">
+                                            <div class="ny-carousel__ny-slide ny-slide">
+                                                <div class="ny-slide__image">
+                                                    <img src="./images/slide-image.png" alt="">
+                                                </div>
+                                                <div class="ny-slide__info">
+                                                    <h4 class="ny-slide__title">
+                                                        Мистическая Москва
+                                                    </h4>
+                                                    <p class="ny-slide__desc">
+                                                        Все секреты Москвы — в этой книге, а главный секрет охватной рекламы в Москве — это реклама на такси «РИМ DRIVE».
+                                                    </p>
+                                                    <a href="#" class="ny-slide__button">
+                                                        <i></i>
+                                                        Заказать
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="ny-locations__item" id="loc-msc">
+                                <article class="ny-locations__item-left ny-info">
+                                    <div class="ny-info__head">
+                                        <h3 class="ny-info__title">
+                                            Москва
+                                        </h3>
+                                        <div class="ny-info__desc">
+                                            <p class="ny-info__text">
+                                                Москва — центр России, это знают все. Но далеко не все в курсе, что город хранит множество тайн и мистических историй. А
+                                                еще она знаменита яркими тусовками и легендарными уличными художниками, которые делают классный мерч!
+                                            </p>
+                                            <p class="ny-info__text">
+                                                В Москве мы продаём рекламу на экранах такси и с каждым днем их становится всё больше и больше. А в 2025 году у нас
+                                                появится 3 топовых медиафасада.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <ul class="ny-info__list">
+                                        <li class="ny-info__item">
+                                            <span class="ny-info__value">95,97%</span>
+                                            <span class="ny-info__key">доля рынка</span>
+                                        </li>
+                                        <li class="ny-info__item">
+                                            <span class="ny-info__value">4 294</span>
+                                            <span class="ny-info__key">рекламные поверхности</span>
+                                        </li>
+                                        <li class="ny-info__item">
+                                            <span class="ny-info__value">2 520</span>
+                                            <span class="ny-info__key">рекламных digital-поверхности</span>
+                                        </li>
+                                    </ul>
+                                </article>
+                                <div class="ny-locations__item-right ny-carousel">
+                                    <ul class="ny-carousel__list">
+                                        <li class="ny-carousel__slide">
+                                            <div class="ny-carousel__ny-slide ny-slide">
+                                                <div class="ny-slide__image">
+                                                    <img src="./images/slide-image.png" alt="">
+                                                </div>
+                                                <div class="ny-slide__info">
+                                                    <h4 class="ny-slide__title">
+                                                        Мистическая Москва
+                                                    </h4>
+                                                    <p class="ny-slide__desc">
+                                                        Все секреты Москвы — в этой книге, а главный секрет охватной рекламы в Москве — это реклама на такси «РИМ DRIVE».
+                                                    </p>
+                                                    <a href="#" class="ny-slide__button">
+                                                        <i></i>
+                                                        Заказать
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="ny-carousel__slide">
+                                            <div class="ny-carousel__ny-slide ny-slide">
+                                                <div class="ny-slide__image">
+                                                    <img src="./images/slide-image.png" alt="">
+                                                </div>
+                                                <div class="ny-slide__info">
+                                                    <h4 class="ny-slide__title">
+                                                        Мистическая Москва
+                                                    </h4>
+                                                    <p class="ny-slide__desc">
+                                                        Все секреты Москвы — в этой книге, а главный секрет охватной рекламы в Москве — это реклама на такси «РИМ DRIVE».
+                                                    </p>
+                                                    <a href="#" class="ny-slide__button">
+                                                        <i></i>
+                                                        Заказать
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="ny-carousel__slide">
+                                            <div class="ny-carousel__ny-slide ny-slide">
+                                                <div class="ny-slide__image">
+                                                    <img src="./images/slide-image.png" alt="">
+                                                </div>
+                                                <div class="ny-slide__info">
+                                                    <h4 class="ny-slide__title">
+                                                        Мистическая Москва
+                                                    </h4>
+                                                    <p class="ny-slide__desc">
+                                                        Все секреты Москвы — в этой книге, а главный секрет охватной рекламы в Москве — это реклама на такси «РИМ DRIVE».
+                                                    </p>
+                                                    <a href="#" class="ny-slide__button">
+                                                        <i></i>
+                                                        Заказать
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="ny-locations__item" id="loc-stp">
+                                <article class="ny-locations__item-left ny-info">
+                                    <div class="ny-info__head">
+                                        <h3 class="ny-info__title">
+                                            Санкт-Петербург
+                                        </h3>
+                                        <div class="ny-info__desc">
+                                            <p class="ny-info__text">
+                                                Санкт-Петербург — это счастье! В культурной столице России люди одинаково любят читать книги и слушать русский рок.
+                                                Питерские дворы всё ещё помнят спетые под гитару песни Цоя, которые стали символом целой эпохи!
+                                            </p>
+                                            <p class="ny-info__text">
+                                                Только за 2024 год мы установили 150 digital-билбордов, и на этом не планируем останавливаться!
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <ul class="ny-info__list">
+                                        <li class="ny-info__item">
+                                            <span class="ny-info__value">95,97%</span>
+                                            <span class="ny-info__key">доля рынка</span>
+                                        </li>
+                                        <li class="ny-info__item">
+                                            <span class="ny-info__value">4 294</span>
+                                            <span class="ny-info__key">рекламные поверхности</span>
+                                        </li>
+                                        <li class="ny-info__item">
+                                            <span class="ny-info__value">2 520</span>
+                                            <span class="ny-info__key">рекламных digital-поверхности</span>
+                                        </li>
+                                    </ul>
+                                </article>
+                                <div class="ny-locations__item-right ny-carousel">
+                                    <ul class="ny-carousel__list">
+                                        <li class="ny-carousel__slide">
+                                            <div class="ny-carousel__ny-slide ny-slide">
+                                                <div class="ny-slide__image">
+                                                    <img src="./images/slide-image.png" alt="">
+                                                </div>
+                                                <div class="ny-slide__info">
+                                                    <h4 class="ny-slide__title">
+                                                        Мистическая Москва
+                                                    </h4>
+                                                    <p class="ny-slide__desc">
+                                                        Все секреты Москвы — в этой книге, а главный секрет охватной рекламы в Москве — это реклама на такси «РИМ DRIVE».
+                                                    </p>
+                                                    <a href="#" class="ny-slide__button">
+                                                        <i></i>
+                                                        Заказать
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="ny-carousel__slide">
+                                            <div class="ny-carousel__ny-slide ny-slide">
+                                                <div class="ny-slide__image">
+                                                    <img src="./images/slide-image.png" alt="">
+                                                </div>
+                                                <div class="ny-slide__info">
+                                                    <h4 class="ny-slide__title">
+                                                        Мистическая Москва
+                                                    </h4>
+                                                    <p class="ny-slide__desc">
+                                                        Все секреты Москвы — в этой книге, а главный секрет охватной рекламы в Москве — это реклама на такси «РИМ DRIVE».
                                                     </p>
                                                     <a href="#" class="ny-slide__button">
                                                         <i></i>
@@ -394,12 +645,12 @@
         <div class="modal">
             <div class="modal__container" data-target="modal">
                 <div class="modal__content">
-                    <button type="button" class="modal__close-btn modal-close">
+                    <button type="button" class="modal__close-btn modal-close js-form-modal">
                         <svg class="icon">
                             <use xlink:href="./images/sprite.svg#close"></use>
                         </svg>
                     </button>
-                    <form action="" class="modal__form">
+                    <form action="" class="modal__form" data-need-validation>
                         <h3 class="modal__title">
                             Дорогой РИМ!
                         </h3>
@@ -408,40 +659,83 @@
                                 <div class="modal__label">
                                     На Новый год я хочу
                                 </div>
-                                <input type="text" class="modal__input" placeholder="Выбери из списка">
+                                <div class="modal__select select">
+                                    <button class="select__current select__current--opacity" type="button">Выбери из списка</button>
+                                    <div class="select__dropdown">
+                                        <ul class="select__list">
+                                            <li class="select__item">
+                                                <label class="select__label" for="radio-product-1">
+                                                    <input type="radio" hidden="hidden" name="products-radios" id="radio-product-1">
+                                                    <span class="select__text">Книга «Слово пацана»</span>
+                                                </label>
+                                            </li>
+                                            <li class="select__item">
+                                                <label class="select__label" for="radio-product-2">
+                                                    <input type="radio" hidden="hidden" name="products-radios" id="radio-product-2">
+                                                    <span class="select__text">Книга «Легенды Казани»</span>
+                                                </label>
+                                            </li>
+                                            <li class="select__item">
+                                                <label class="select__label" for="radio-product-3">
+                                                    <input type="radio" hidden="hidden" name="products-radios" id="radio-product-3">
+                                                    <span class="select__text">Сумка «Татарский для вас»</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </li>
                             <li class="modal__row">
                                 <div class="modal__label">
                                     Доставь мой подарочек по адресу
                                 </div>
-                                <input name="gift-address" type="text" class="modal__input" placeholder="Москва, ул. Пушкина, д.1, кв. 1">
+                                <input
+                                    name="gift-address"
+                                    type="text"
+                                    class="modal__input"
+                                    data-parsley-required
+                                    required
+                                    placeholder="Москва, ул. Пушкина, д.1, кв. 1">
                             </li>
                             <li class="modal__row">
                                 <div class="modal__label">
                                     Желательно в эти дни
                                 </div>
-                                <input name="gift-dates" type="text" class="modal__input" placeholder="01.02.2024 — 28.02.2024">
+                                <input name="daterange" type="text" class="modal__input js-numeric-input" placeholder="01.02.2024 — 28.02.2024">
                             </li>
                             <li class="modal__row">
                                 <div class="modal__label">
                                     и в этот временной промежуток
                                 </div>
-                                <input name="gift-times" type="text" class="modal__input" placeholder="18:00 — 21:00">
+                                <input name="timerange" type="text" class="modal__input" data-parsley-required required placeholder="18:00 — 21:00">
                             </li>
                             <li class="modal__row">
                                 <div class="modal__label">
                                     Получать подарок будет
                                 </div>
-                                <input name="gift-company" type="text" class="modal__input" placeholder="Компания">
+                                <input name="gift-company" type="text" class="modal__input" data-parsley-required required placeholder="Компания">
                             </li>
                             <li class="modal__row">
-                                <input name="gift-name" type="text" class="modal__input" placeholder="Иванов Иван Иванович">
+                                <input
+                                    name="gift-name"
+                                    type="text"
+                                    class="modal__input"
+                                    data-parsley-required
+                                    required
+                                    placeholder="Иванов Иван Иванович">
                             </li>
                             <li class="modal__row">
                                 <div class="modal__label">
-                                    ПЕсли есть вопросы или нужно-что то уточнить, звоните по телефону
+                                    Если есть вопросы или нужно-что то уточнить, звоните по телефону
                                 </div>
-                                <input name="gift-company" type="tel" class="modal__input" placeholder="8 (999) 999-99-99">
+                                <input
+                                    name="gift-company"
+                                    type="tel"
+                                    class="modal__input js-phone-input"
+                                    data-parsley-required
+                                    data-parsley-phone
+                                    required
+                                    placeholder="8 (999) 999-99-99">
                             </li>
                             <li class="modal__row">
                                 <button type="submit" class="modal__submit-btn">
@@ -453,12 +747,33 @@
                 </div>
             </div>
         </div>
+        <div class="modal">
+            <div class="modal__container" data-target="modal-success">
+                <div class="modal__content modal__success">
+                    <button type="button" class="modal__close-btn modal-close">
+                        <svg class="icon">
+                            <use xlink:href="./images/sprite.svg#close"></use>
+                        </svg>
+                    </button>
+                    <h3>
+                        Ура, ваш заказ<br> принят!
+                    </h3>
+                    <p>
+                        Теперь дело за нашими волшебницами<br> из отдела маркетинга. Совсем скоро<br>
+                        они свяжутся с вами, чтобы подтвердить<br> оформление вашего подарка.
+                    </p>
+                    <span>С наступающим!</span>
+                </div>
+            </div>
+        </div>
         <script
             async
             src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
             integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
             crossorigin="anonymous"
             defer></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
         <script
             async
             src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.8/inputmask.min.js"

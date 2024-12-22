@@ -4,6 +4,7 @@
   /* layout: */
   --max-container-width: 120rem;
   --content-padding: 1rem;
+  --header-height: 9rem;
 
   /* colors: */
   --accent: orange;
@@ -33,8 +34,9 @@
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 992px) {
   :root {
+    --header-height: 6rem;
     --content-padding: 4rem;
   }
 }

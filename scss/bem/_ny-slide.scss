@@ -44,14 +44,13 @@
     }
 
     &__title {
-        white-space: nowrap;
         @include font(1.6rem, 1.0, 800);
-        @include maxSizeText(9);
     }
 
     &__desc {
         flex-grow: 1;
         @include font(1.4rem, 1.0, 500);
+        @include maxSizeText(9);
     }
 
     &__button {

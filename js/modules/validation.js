@@ -26,11 +26,11 @@ window.Parsley.addValidator('phone', {
   requirementType: 'string',
   validateString: function (value) {
     if (value.trim() === '') return true;
-    return /^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/.test(value);
+    return /^(\+7|7|8)?[\s\-]?\(?[1-9][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/.test(value);
   },
   messages: {
     en: 'Number field +7(9XX)XXX-XX-XX',
-    ru: 'Формат +7(9XX)XXX-XX-XX',
+    ru: 'Формат 8(9XX)XXX-XX-XX',
   },
 });
 
@@ -69,7 +69,7 @@ Parsley.addMessages('ru', {
     alphanum: 'Введите буквенно-цифровое значение.',
   },
   notblank: 'Это поле должно быть заполнено.',
-  required: 'Обязательное поле',
+  required: 'Поле не заполнено',
   pattern: 'Это значение некорректно.',
   min: 'Это значение должно быть не менее чем %s.',
   max: 'Это значение должно быть не более чем %s.',
@@ -85,10 +85,26 @@ Parsley.addMessages('ru', {
 
 Parsley.setLocale('ru');
 
+window.Parsley.on('form:success', function() {
+
+});
+
 export default function validation() {
   const formsToValidate = Array.from(document.querySelectorAll('form[data-need-validation]'));
 
   formsToValidate.forEach((form) => {
     $(form).parsley();
+
+    $(form).submit((e) => {
+        e.preventDefault();
+
+        $('.js-form-modal').click();
+
+        const button = document.createElement("button");
+        button.classList.add('visually-hidden');
+        button.dataset.path = 'modal-success';
+        $("body").append(button);
+        button.click();
+    });
   });
 }

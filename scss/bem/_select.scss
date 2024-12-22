@@ -1,0 +1,128 @@
+.select {
+    position: relative;
+    z-index: 200;
+    width: max-content;
+
+    &__dropdown {
+      position: absolute;
+      top: calc(100% - 1px);
+
+      overflow: hidden;
+      display: none;
+
+      width: 100%;
+      padding-top: 0.8rem;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      overflow: hidden;
+      padding: 2.4rem 1.5rem;
+
+      background: #D9D9D9;
+      border-radius: 0.9rem;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #1E1E1E;
+        }
+    }
+
+    &__label {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.6rem;
+
+      width: 100%;
+
+      transition: var(--transition);
+      transition-property: background, border;
+      cursor: pointer;
+    }
+
+    &__text {
+      display: block;
+
+      flex-grow: 1;
+
+      @include font(1.6rem, 1.0, 500);
+    }
+
+    &__current {
+      position: relative;
+
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      width: 100%;
+      height: 4rem;
+      padding: 1.2rem 1.4rem;
+
+      @include font(1.6rem, 1.0, 500);
+      color: rgba($color: #1E1E1E, $alpha: 1);
+
+      background: #D9D9D9;
+      border-radius: 0.9rem;
+      backdrop-filter: blur(12.5px);
+
+      &::after {
+        position: absolute;
+        top: 50%;
+        right: 2rem;
+
+        display: block;
+
+        width: 1rem;
+        height: 1rem;
+        transform: translateY(-50%);
+
+        background-image: url("data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%229%22%20height%3D%226%22%20viewBox%3D%220%200%209%206%22%20fill%3D%22none%22%3E%0A%20%20%3Cpath%20d%3D%22M0.910156%201.51219L4.42148%205.07045L7.93281%201.51219%22%20stroke%3D%22%23FF5129%22%20stroke-width%3D%221.82361%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%0A%3C%2Fsvg%3E");
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: center ;
+
+        opacity: 0.4;
+        transition: transform var(--transition);
+        content: "";
+      }
+
+      &.select__current--opacity {
+        color: rgba($color: #1E1E1E, $alpha: 0.5);
+      }
+
+      &.select__current--active {
+        color: rgba($color: #1E1E1E, $alpha: 1);
+
+        &::after {
+            transform: translateY(-50%) rotate(180deg);
+        }
+
+        &+.select__dropdown {
+            display: block;
+
+            .select__list {
+                animation: slideDown 0.3s ease 0s 1 forwards;
+            }
+        }
+      }
+    }
+  }
+
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
