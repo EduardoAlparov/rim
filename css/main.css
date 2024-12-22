@@ -386,12 +386,14 @@ textarea:required:valid {
   position: absolute;
   top: 0;
   left: 50%;
+  z-index: -1;
   width: 100%;
+  max-width: 192rem;
   height: 100%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   background-image: url("./../images/cover-m.png");
-  background-position: top center;
+  background-position: center 8rem;
   background-repeat: no-repeat;
   background-size: 100% auto;
   pointer-events: none;
@@ -400,6 +402,7 @@ textarea:required:valid {
 @media only screen and (min-width: 992px) {
   .page-main::after {
     background-image: url("./../images/cover.png");
+    background-position: center 13rem;
   }
 }
 
@@ -418,6 +421,11 @@ textarea:required:valid {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+}
+
+.section {
+  position: relative;
+  z-index: 100;
 }
 
 ._intro-padding-top, .ny-welcome__site-container {
@@ -2057,6 +2065,7 @@ textarea:required:valid {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  pointer-events: none;
 }
 .search-bar__dropdown {
   position: absolute;
@@ -2096,7 +2105,7 @@ textarea:required:valid {
       -ms-user-select: text;
           user-select: text;
 }
-.search-bar.search-bar--show-dropdown .search-bar__input:valid + .search-bar__dropdown {
+.search-bar.search-bar--show-dropdown .search-bar__input + .search-bar__dropdown {
   display: block;
 }
 .search-bar.search-bar--static .search-bar__dropdown {

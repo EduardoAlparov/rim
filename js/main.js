@@ -2,6 +2,7 @@ import setHeaderPadding from "./modules/setHeaderPadding.js";
 import nyCarouselSwiper from "./modules/nyCarouselSwiper.js";
 import burgerMenu from "./modules/burgerMenu.js";
 import selectSetValue from "./modules/selectSetValue.js";
+import searchBar from "./modules/searchBar.js";
 
 import Modal from "./modules/Modal.js";
 import masks from "./modules/masks.js";
@@ -32,4 +33,5 @@ document.addEventListener("DOMContentLoaded", () => {
     setHeaderPadding();
     nyCarouselSwiper();
     selectSetValue();
+    searchBar();
 })

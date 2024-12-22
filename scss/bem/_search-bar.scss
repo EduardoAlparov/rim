@@ -36,6 +36,8 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
+
+        pointer-events: none;
     }
 
     &__dropdown {
@@ -67,10 +69,8 @@
 
     &.search-bar--show-dropdown {
         .search-bar__input {
-            &:valid {
-                &+ .search-bar__dropdown {
-                    display: block;
-                }
+            &+.search-bar__dropdown {
+                display: block;
             }
         }
     }

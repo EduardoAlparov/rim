@@ -11,12 +11,7 @@
             content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <meta property="og:image" content="images/preview.jpg">
         <link rel="icon" href="images/favicon.png">
-        <link rel="preload stylesheet" as="style" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-        <link
-            rel="preload stylesheet"
-            as="style"
-            href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
+        <link rel="stylesheet" type="text/css" href="./js/libs/daterangepicker/daterangepicker.css"/>
         <link rel="stylesheet" href="./styles.css">
     </head>
     <body class="preload">
@@ -28,7 +23,7 @@
                             <img src="./images/logo-big.png" alt="">
                         </a>
                         <div class="page-header__controls">
-                            <form action="" class="page-header__search-bar search-bar search-bar--show-dropdown">
+                            <form action="" class="page-header__search-bar search-bar js-search-bar">
                                 <i></i>
                                 <input
                                     name="desktop-search"
@@ -111,52 +106,52 @@
                                 <div class="search-bar__dropdown">
                                     <ul class="search-bar__dropdown-list">
                                         <li class="search-bar__dropdown-item">
-                                            <a href="#" class="search-bar__dropdown-link">
+                                            <a href="#loc-tat" class="search-bar__dropdown-link js-mobile-search-link">
                                                 Татарстан
                                             </a>
                                         </li>
                                         <li class="search-bar__dropdown-item">
-                                            <a href="#" class="search-bar__dropdown-link">
+                                            <a href="#loc-msc" class="search-bar__dropdown-link js-mobile-search-link">
                                                 Москва
                                             </a>
                                         </li>
                                         <li class="search-bar__dropdown-item">
-                                            <a href="#" class="search-bar__dropdown-link">
+                                            <a href="#loc-stp" class="search-bar__dropdown-link js-mobile-search-link">
                                                 Санкт-Петербург
                                             </a>
                                         </li>
                                         <li class="search-bar__dropdown-item">
-                                            <a href="#" class="search-bar__dropdown-link">
+                                            <a href="#" class="search-bar__dropdown-link js-mobile-search-link">
                                                 Свердловская область
                                             </a>
                                         </li>
                                         <li class="search-bar__dropdown-item">
-                                            <a href="#" class="search-bar__dropdown-link">
+                                            <a href="#" class="search-bar__dropdown-link js-mobile-search-link">
                                                 Башкортостан
                                             </a>
                                         </li>
                                         <li class="search-bar__dropdown-item">
-                                            <a href="#" class="search-bar__dropdown-link">
+                                            <a href="#" class="search-bar__dropdown-link js-mobile-search-link">
                                                 Челябинская область
                                             </a>
                                         </li>
                                         <li class="search-bar__dropdown-item">
-                                            <a href="#" class="search-bar__dropdown-link">
+                                            <a href="#" class="search-bar__dropdown-link js-mobile-search-link">
                                                 Самарская область
                                             </a>
                                         </li>
                                         <li class="search-bar__dropdown-item">
-                                            <a href="#" class="search-bar__dropdown-link">
+                                            <a href="#" class="search-bar__dropdown-link js-mobile-search-link">
                                                 Нижегородская область
                                             </a>
                                         </li>
                                         <li class="search-bar__dropdown-item">
-                                            <a href="#" class="search-bar__dropdown-link">
+                                            <a href="#" class="search-bar__dropdown-link js-mobile-search-link">
                                                 Красноярский край
                                             </a>
                                         </li>
                                         <li class="search-bar__dropdown-item">
-                                            <a href="#" class="search-bar__dropdown-link">
+                                            <a href="#" class="search-bar__dropdown-link js-mobile-search-link">
                                                 Пермский край
                                             </a>
                                         </li>
@@ -772,8 +767,8 @@
             integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
             crossorigin="anonymous"
             defer></script>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+        <script type="text/javascript" src="./js/libs/daterangepicker/moment.min.js" defer></script>
+        <script type="text/javascript" src="./js/libs/daterangepicker/daterangepicker.js" defer></script>
         <script
             async
             src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.8/inputmask.min.js"
@@ -781,8 +776,6 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
             defer></script>
-        <script async src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
-        <script async src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js" defer></script>
         <script src="./js/main.js" type="module" defer></script>
     </body>
 </html>
