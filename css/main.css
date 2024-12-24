@@ -1718,7 +1718,6 @@ textarea:required:valid {
       -ms-flex-align: stretch;
           align-items: stretch;
   gap: 2rem;
-  max-width: 82rem;
   margin-bottom: 3.2rem;
 }
 .ny-info__title {
@@ -1778,6 +1777,27 @@ textarea:required:valid {
      -moz-user-select: text;
       -ms-user-select: text;
           user-select: text;
+}
+@media only screen and (min-width: 992px) {
+  .ny-info__text {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -ms-flex-preferred-size: 54rem;
+        flex-basis: 54rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .ny-info__text.ny-info__text--bigger {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .ny-info__text.ny-info__text--smaller {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
 }
 .ny-info__list {
   display: -webkit-box;

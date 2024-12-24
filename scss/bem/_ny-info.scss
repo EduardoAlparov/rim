@@ -7,7 +7,7 @@
         align-items: stretch;
         gap: 2rem;
 
-        max-width: 82rem;
+        // max-width: 82rem;
         margin-bottom: 3.2rem;
     }
 
@@ -36,6 +36,25 @@
         &>p {
             color: #1E1E1E;
             @include font(1.6rem, 1.1, 500);
+        }
+    }
+
+    &__text {
+        @include breakpointMF(portait-tablet) {
+            flex-grow: 0;
+            flex-basis: 54rem;
+        }
+
+        &.ny-info__text--bigger {
+            @include breakpointMF(portait-tablet) {
+                flex-basis: 70%;
+            }
+        }
+
+        &.ny-info__text--smaller {
+            @include breakpointMF(portait-tablet) {
+                flex-basis: 30%;
+            }
         }
     }
 
